@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>our project</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+  <link rel="stylesheet" href="../Css/cart.css">
+
+
+</head>
+
+<body class="body">
+
+  <div class="allpage">
+    <div class="navbar">
+      <a href="home.html">Home</a>
+
+
+      <a id="carrt" href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+
+
+  </div>
+  </div>
+
+  <form method="GET">
+    <div class="Cartpage">
+      <h1>Shopping Cart</h1>
+      <div class="cart">
+        <div class="items" id="items">
+          </div>
+          <div class="Total">
+
+
+
+                <p>
+                <span>Total Price</span>
+                <span id="total-price" class="Totalprice">
+                </span>
+                </p>
+                <p>
+
+                <span> Number of Items</span>
+                <span id="num" class="numitems">0</span>
+                </p>
+                <button type="submit" class="btn" id="sub" form="form">Procees to checkout</button>
+
+
+
+
+
+
+        </div>
+      </div>
+    </div>
+
+  </form>
+  <form method="POST" id="form"></form>
+
+  <script src="../Js/cart.js">
+  </script>
+</body>
+
+</html>

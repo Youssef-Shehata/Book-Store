@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../Css/payment.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="page">
+        <form action="paymet_message.html" method="GET">
+        
+            <h1>Payment</h1>
+            <div class="input">
+                <div class="input1">
+                    <input type="text" placeholder="Full Name" required class="user" id="Full Name" name="Full Name">
+                    <i class="fas fa-user icon"></i>
+                </div>
+
+
+
+            </div>
+            <div class="input">
+                <div class="input1">
+
+                    <input type="tel" placeholder="Mobile Number" required class="user" id="Mobile Number" name="Mobile Number"
+                        value="+20">
+                    <i class="fas fa-phone-alt icon"></i>
+                </div>
+
+            </div>
+            <div class="input">
+                <div class="input1">
+                    <input type="email" placeholder="Email Adress" required id="Email" class="user" name="Email Adress">
+                    <i class="fas fa-envelope icon"></i>
+                </div>
+            </div>
+            <div class="input">
+                <div class="input1">
+                    <input type="text" class="user" placeholder="City" required name="City" id="city">
+                    <i class="fas fa-city icon"></i>
+                </div>
+            </div>
+            <div class="input">
+                <div class="input1">
+                    <input type="text" class="user" required placeholder="Adress" name="adress" id="adress">
+                    <i class="fas fa-map icon"></i>
+                </div>
+            </div>
+            <div   class="input">
+                <div class="input1">
+                    <h1>Payment Methode</h1>
+                    <input 
+                    onclick="fun1()" 
+                    type="radio" value="Visa" class="radio" name="Methode" id="Visa" checked >
+                    <label for="Visa"><i class="fab fa-cc-visa" ></i>VisaCard</label>
+                    <input onclick="fun2()" value="Paypal" type="radio" required name="Methode" class="radio" id="Paypal">
+                    <label for="Paypal"><i class="fab fa-paypal "></i>Paypal</label>
+                </div>
+            </div>
+            <div  class="input">
+                <div  id="VisaCard"  class="input1">
+                    <input id="Vnum" type="tel" required placeholder="Card Number" class="user">
+                    <i class="fas fa-credit-card icon"></i>
+                </div>
+            </div>
+            <div  class="input">
+                <div  id="CCV" class="input1">
+                    <input type="tel" class="user" required id="Cnum" placeholder="CCV" maxlength="3" minlength="3">
+                    <i class="fas fa-lock icon"></i>
+                </div>
+
+                <div   type="text"   id="date" class="input1">
+                    <select required id="month">
+                        <option value="0">---Select month---</option>
+                        <option value="1">01</option>
+                        <option value="2">02</option>
+                        <option value="3">03</option>
+                        <option value="4">04</option>
+                        <option value="5">05</option>
+                        <option value="6">06</option>
+                        <option value="7">07</option>
+                        <option value="8">08</option>
+                        <option value="9">09</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                    </select>
+                    <select  required id="year">
+                        <option value="0">---Select year---</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+                    </select>
+                    
+                    </div>
+                </div>
+                <div class="input">
+                    <div  id="paypalAcc" hidden class="input1">
+                        <input  id="pplacc" type="email" placeholder="Paypal Account" name="Paypalac"class="user" >
+                        <i  class="fas fa-user-circle icon"></i>
+                    </div>
+            
+            </div>
+            <div class="input">
+                <div id ="but1"  class="input1">
+                    <button type="submit" onclick="pass()" >Confirm</button>
+                    <div id="one" class="input1">
+                        <span class="lbl">Total Price : </span>
+                        <span id="Total" class="total"></span>
+                        
+                    </div>
+                  
+                   
+                </div>
+            </div>
+            <div class="input">
+                <div class="input1">
+                    <button  hidden id="but2" type="submit" onclick="pass2()" >Confirm</button>
+                    <div hidden id="two" class="input1">
+                        <span class="lbl">Total Price : </span>
+                        <span id="Total"class="total"></span>
+                        
+                    </div>
+                   
+                </div>
+        
+
+        </div>
+        
+
+     
+
+
+    </form>
+    </div>
+    
+</body>
+<script src="../Js/payment.js">
+    
+</script>
+
+</html>

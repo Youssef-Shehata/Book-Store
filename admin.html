@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PT BookStore</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+
+    <link rel="stylesheet" href="../Css/admin.css">
+</head>
+<body>
+
+  <div class="settings" id="settings">
+    <img src="imgs/logo.png" class="pic" id="pic">
+    <div class="container">
+      <h1>PROFILE</h1>
+      <div class="option-box">
+        <ul class="option-list">
+          <p id="email">Email
+
+          <li><a href="login.html"> Log Out</a></li>
+
+
+        </ul>
+
+      </div>
+    </div>
+
+
+  </div>
+
+
+  <div class="landing">
+    <div class="overlay"></div>
+    <div class="header">
+      <div class="logo">PT Book Store</div>
+      <ul class="links">
+        <li><a class="active" href="admin.html">Home</a> </li>
+        <a id="carrt" href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+
+
+
+
+      </ul>
+    </div>
+    <div class="main">
+      <p>Top Sales</p>
+
+      <div class="slide-container" id="container">
+
+        <span class="prev" onclick="changeSlide(0)"><</span>
+        <span class="next" onclick="changeSlide(1)">></span>
+
+      </div>
+
+    </div>
+    <div class="booksOverlay">
+
+    </div>
+    <span class="edit" id="edit" onclick="addBook()">+</span>
+
+    <div class="addBook" id="formAdd">
+      <input type="text" class="addname" value="name" id="addname" required>
+      <input type="text" class="addimg" value="image path" id="addimg" required>
+      <input type="text" class="addprice" value="price" id="addprice" required>
+      <input type="button" class="addbook" value="Add" id="subAdd">
+      <input type="button" class="exit" value="X" id="exit">
+
+    </div>
+
+
+
+
+
+  </div>
+
+
+
+
+
+<script src="../Js/admin.js" ></script>
+</body>
+</html>
